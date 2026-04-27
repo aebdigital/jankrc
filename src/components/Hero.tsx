@@ -35,7 +35,7 @@ export default function Hero() {
     >
       <div ref={bgRef} className="absolute inset-0 -z-10 will-change-transform">
         <Image
-          src="/images/close-up-construction-worker-construction-site-82fb2068.webp"
+          src="/images/86514c4d-f5b8-4e99-b63c-42605d7ba40b-2.jpg"
           alt=""
           fill
           priority
