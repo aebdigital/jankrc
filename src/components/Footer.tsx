@@ -72,7 +72,17 @@ export default function Footer() {
           <p>Copyright © {new Date().getFullYear()} {site.name} All Rights Reserved.</p>
           <div className="flex items-center gap-5">
             <CookieSettingsLink className="text-white/60 hover:text-brand-accent transition-colors" />
-            <p>Tvorba stránky — AEB Digital</p>
+            <p>
+              Tvorba stránky —{" "}
+              <a
+                href="https://aebdigital.sk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-accent transition-colors"
+              >
+                AEB Digital
+              </a>
+            </p>
           </div>
         </div>
       </div>
