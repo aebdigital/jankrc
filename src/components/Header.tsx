@@ -9,7 +9,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-brand-line">
+    <>
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-brand-line">
       <div className="hidden md:block bg-brand-dark text-white text-xs">
         <div className="mx-auto max-w-7xl px-6 py-2 flex items-center justify-end gap-6">
           <a
@@ -81,6 +82,9 @@ export default function Header() {
         </button>
       </div>
 
+      </header>
+
+      {/* Mobile Navigation Overlay - Placed outside header to avoid backdrop-blur containing block */}
       <div
         className={`fixed inset-0 z-[60] bg-brand-dark text-white transform transition-transform duration-300 ease-in-out md:hidden ${
           open ? "translate-x-0" : "-translate-x-full"
@@ -136,6 +140,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }
