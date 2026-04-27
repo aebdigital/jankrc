@@ -22,5 +22,4 @@ export const site = {
 export const nav = [
   { href: "/", label: "Domov" },
   { href: "/referencie", label: "Referencie" },
-  { href: "/kontakt", label: "Kontakt" },
 ] as const;
