@@ -5,7 +5,7 @@ import CookieSettingsLink from "./CookieSettingsLink";
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark text-white mt-24">
+    <footer className="bg-brand-dark text-white">
       <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-3">
         <div>
           <Image

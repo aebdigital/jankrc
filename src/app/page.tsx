@@ -183,7 +183,7 @@ export default function Home() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 bg-brand-dark text-white">
+        <section className="py-12 bg-brand-dark text-white">
           <div className="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
             <div data-reveal>
               <h3 className="text-2xl md:text-3xl font-bold">Potrebujete poradiť?</h3>
