@@ -3,6 +3,7 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import RollingButton from "@/components/RollingButton";
 import { projects } from "@/data/projects";
+import ProjectGallery from "@/components/ProjectGallery";
 
 const constructionServices = [
   "prípravné práce pre výstavbu",
@@ -162,23 +163,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
-              {fleet.map((src, i) => (
-                <div
-                  key={src}
-                  data-reveal
-                  className="relative aspect-[4/3] overflow-hidden"
-                >
-                  <Image
-                    src={src}
-                    alt={`Stroj ${i + 1}`}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-700"
-                    sizes="(min-width: 768px) 33vw, 100vw"
-                  />
-                </div>
-              ))}
-            </div>
+            <ProjectGallery title="Strojový park" images={fleet} className="grid gap-6 md:grid-cols-3" />
           </div>
         </section>
 

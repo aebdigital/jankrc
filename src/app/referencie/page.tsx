@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { projects } from "@/data/projects";
+import ProjectGallery from "@/components/ProjectGallery";
 
 export const metadata: Metadata = {
   title: "Referencie",
@@ -55,23 +55,7 @@ export default function ReferenciePage() {
               <div className="mt-4 h-1 w-16 bg-brand-accent" />
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {p.images.map((src, i) => (
-                <div
-                  key={src}
-                  data-reveal
-                  className="relative aspect-[4/3] overflow-hidden bg-brand-bg group"
-                >
-                  <Image
-                    src={src}
-                    alt={`${p.title} — ${i + 1}`}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  />
-                </div>
-              ))}
-            </div>
+            <ProjectGallery title={p.title} images={p.images} />
           </section>
         ))}
       </div>
